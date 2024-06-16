@@ -75,6 +75,12 @@
 <ul>
 <li><code>hp</code>가 999이므로, 장군개미 199 마리 병정개미 한마리 일개미 한마리로 사냥할 수 있습니다. 따라서 201을 return합니다.</li>
 </ul>
+<br>
 
+### :pushpin: 체크 포인트 
+* 간단한 그리디 알고리즘 문제
+* Math.floor 을 이용해서 간단히 "return 장군개미 + 병정개미 + 일개미" 값으로 내보는 방식으로 다시 해보기
+
+<br>
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
