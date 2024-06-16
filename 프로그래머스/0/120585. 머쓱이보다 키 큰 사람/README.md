@@ -70,5 +70,11 @@
 <li>180, 120, 140 중 190보다 큰 수는 없으므로 0명입니다.</li>
 </ul>
 
+<br>
 
+### :pushpin: 체크 포인트 
+* filter 메서드로 사용해보기
+* for문과 forEach 성능 차이 알아보기
+
+<br>
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
