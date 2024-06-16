@@ -75,4 +75,5 @@
 ### :pushpin: 체크 포인트 
 arr.includes(valueToFind[, fromIndex]) : 배열이 특정값을 포함하고 있는지의 여부를 boolean 값으로 반환
 
+<br>
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
