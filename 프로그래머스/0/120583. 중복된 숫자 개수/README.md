@@ -1,10 +1,10 @@
 # [level 0] 중복된 숫자 개수 - 120583 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120583) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120583?language=java) 
 
 ### 성능 요약
 
-메모리: 33.4 MB, 시간: 0.04 ms
+메모리: 78.8 MB, 시간: 0.03 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 06월 16일 23:34:47
+2024년 08월 05일 23:07:42
 
 ### 문제 설명
 
@@ -70,10 +70,5 @@
 <li>[0, 2, 3, 4] 에는 1이 0개 있습니다.</li>
 </ul>
 
-<br>
 
-### :pushpin: 체크 포인트 
-arr.includes(valueToFind[, fromIndex]) : 배열이 특정값을 포함하고 있는지의 여부를 boolean 값으로 반환
-
-<br>
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
