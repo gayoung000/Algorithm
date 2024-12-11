@@ -23,22 +23,20 @@ public class Main {
 		
 		long count = 0;
 		
-		for(int i = 0; i < Ai.length; i++) { 
-			// 총감독 먼저 구하기
-			count+=1;
+		for(int i = 0; i < Ai.length; i++) {
+			count += 1;
 			Ai[i] = Ai[i] - B;
 			
-			// 부감독 구하기 
 			if(Ai[i] > 0) {
-				int subDirNum = Ai[i] / C;
-				count += subDirNum;
-				if (Ai[i] % C > 0) { 
-                    count += 1;
-                }	
+				count += Ai[i] / C;
+				if(Ai[i] % C > 0) {
+					count += 1;
+				}
 			}
 		}
 		
 		System.out.println(count);
+
 	}
 
 }
