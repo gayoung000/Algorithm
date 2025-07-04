@@ -1,18 +1,15 @@
 function solution(angle) {
-    let answer = 0;
-    angle = parseInt(angle);
+    let a = angle;
     
-    if (0 < angle && angle < 90){
-        answer = 1;
-    } else if (angle === 90){
-        answer = 2;
-    } else if (90 < angle && angle < 180){
-        answer = 3;
+    if (0 < a && a < 90){
+        return 1;
+    } else if (a == 90){
+        return 2;
+    } else if (90 < a && a < 180){
+        return 3;
     } else {
-        answer = 4;
+        return 4;
     } 
-    
-    console.log(answer);
-    return answer;
+  
 }
 
