@@ -1,10 +1,10 @@
 # [level 0] 숫자 비교하기 - 120807 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120807) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120807?language=javascript) 
 
 ### 성능 요약
 
-메모리: 83.3 MB, 시간: 0.31 ms
+메모리: 33.5 MB, 시간: 0.04 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 07월 04일 17:13:01
+2025년 07월 04일 17:13:48
 
 ### 문제 설명
 
