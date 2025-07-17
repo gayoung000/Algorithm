@@ -4,11 +4,6 @@ function solution(rsp) {
     map.set("0", "5");
     map.set("5", "2");
     
-    let arr = rsp.split("");
-    let result = "";
-    for(let num of arr){
-        result += map.get(num);
-    }
-    
-    return result;
+
+    return rsp.split("").map((n) => map.get(n)).join("");
 }
