@@ -1,23 +1,19 @@
 function solution(hp) {
-    const generalAntPower = 5;
-    const soldierAntPower = 3;
-    const workerAntPower = 1;
+    const jang = 5;
+    const beong = 3; 
+    const el = 1;
+    let result = 0;
     
-    let count = 0;
+    result += Math.floor(hp/jang);
+    hp = hp - Math.floor(hp/jang)*5;
     
-    while ( hp >= generalAntPower ){
-        hp = hp - generalAntPower;
-        count++;
+    if(hp % jang > 0){
+       result += Math.trunc(hp/beong);
+        hp = hp - Math.trunc(hp/beong)*3;
+        if(hp % beong > 0){
+           result += Math.trunc(hp/el); 
+        }
     }
     
-    while ( hp >= soldierAntPower ) {
-        hp = hp - soldierAntPower;
-        count++;
-    }
-    
-    while ( hp >= workerAntPower ){
-        hp = hp - workerAntPower;
-        count++;
-    }
-    return count;
+    return result;
 }
