@@ -1,10 +1,10 @@
 function solution(nums) {
-    let map = new Map();
+    const set = new Set();  
     const halfSize = nums.length / 2;
     
     for(const num of nums){
-        map.set(num, (map.get(num) || 0) + 1)
+        set.add(num)
     }
     
-    return map.size >= halfSize ? halfSize : map.size; 
+    return set.size >= halfSize ? halfSize : set.size; 
 }
