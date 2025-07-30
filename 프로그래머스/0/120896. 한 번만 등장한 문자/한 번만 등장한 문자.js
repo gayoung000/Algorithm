@@ -1,25 +1,10 @@
 function solution(s) {
-    let newS = s.split("");
-    newS.sort();
+    let maps = new Map();
     
-    let result = "";
-    
-    for(let el of newS){
-        let count = 0;
-        for(let i = 0; i < newS.length; i++){
-            if(el === newS[i]){
-                count++;
-            }
-        }
-        
-        if(count >= 2){
-            continue;
-        } else {
-            result += el;
-        }
+    for(let el of s){
+        maps.get(el) > 0 ? maps.set(el, maps.get(el) + 1) : maps.set(el, 1) 
     }
     
-    return result;
-    
-    
+    let filterArr = [...maps.keys()].filter((a) => maps.get(a)=== 1);
+    return filterArr.sort().join('');
 }
