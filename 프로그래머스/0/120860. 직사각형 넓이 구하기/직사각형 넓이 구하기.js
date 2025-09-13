@@ -1,9 +1,11 @@
 function solution(dots) {
-    let x = dots.map(dot => dot[0]);
-    let y = dots.map(dot => dot[1]);
- 
-    let width = Math.max(...x) - Math.min(...x);
-    let height = Math.max(...y) - Math.min(...y);
+    let xs = dots.map(dot => dot[0]);
+    let ys = dots.map(dot => dot[1]);
 
-    return width * height;
+    let minX = xs.reduce((a, b) => Math.min(a, b));
+    let maxX = xs.reduce((a, b) => Math.max(a, b));
+    let minY = ys.reduce((a, b) => Math.min(a, b));
+    let maxY = ys.reduce((a, b) => Math.max(a, b));
+
+    return (maxX - minX) * (maxY - minY);
 }
