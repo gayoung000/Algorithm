@@ -1,13 +1,11 @@
 function solution(spell, dic) {
-    let result = 0;
-    let target = spell.sort().join("");
-    
-    for(let el of dic){
-        let letter = el.split("").sort().join("");
-        if(letter === target){
-            result++;
+    const target = new Set(spell);
+
+    for (let el of dic) {
+        const wordSet = new Set(el);
+        if (wordSet.size === target.size && [...target].every(ch => wordSet.has(ch))) {
+            return 1;
         }
     }
-    
-    return result == 0 ? 2 : 1
+    return 2;
 }
