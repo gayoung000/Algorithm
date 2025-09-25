@@ -1,3 +1,7 @@
 function solution(M, N) {
-    return M * N - 1;
+    let cuts = 0;
+    cuts += M - 1;
+    cuts += (N - 1) * M;
+
+    return cuts;
 }
