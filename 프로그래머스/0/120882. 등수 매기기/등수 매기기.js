@@ -1,24 +1,14 @@
 function solution(score) {
-     let result = [];
+  const averages = score.map(([eng, math]) => (eng + math) / 2);
+  const sorted = [...averages].sort((a, b) => b - a);
 
-    for (let i = 0; i < score.length; i++) {
-        let [eng, math] = score[i];
-        let avg = (eng + math) / 2;
-
-        // 본인보다 평균이 높은 사람의 수를 센다
-        let rank = 1;
-        for (let j = 0; j < score.length; j++) {
-            if (i !== j) {
-                let [e, m] = score[j];
-                let otherAvg = (e + m) / 2;
-                if (otherAvg > avg) {
-                    rank++;
-                }
-            }
-        }
-
-        result.push(rank);
+  // 점수별 랭크를 기록해두기
+  const rankMap = new Map();
+  sorted.forEach((avg, idx) => {
+    if (!rankMap.has(avg)) {
+      rankMap.set(avg, idx + 1);
     }
+  });
 
-    return result;
+  return averages.map(avg => rankMap.get(avg));
 }
